@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 요소 실습</title>
+</head>
+<body>
+    <h1>반려동물이 있나요?</h1>
+    <form action="/submit" method="post">
+        
+        <label for="username">이름:</label>
+        <input type="text" id="username" name="username" placeholder="이름을 입력하세요"><br><br>
+        
+        <label for="pet">반려동물 유무:</label>
+        <input type="checkbox" id="pet" name="pet" value="yes"><br><br>
+        
+
+        <p>종:</p>
+        <input type="radio" id="dog" name="pet var" value="dog">
+        <label for="male">강아지</label><br>
+        
+        <input type="radio" id="cat" name="pet var" value="cat">
+        <label for="female">고양이</label><br><br>
+        
+
+        <button type="submit">제출</button>
+    </form>
+</body>
+</html>
